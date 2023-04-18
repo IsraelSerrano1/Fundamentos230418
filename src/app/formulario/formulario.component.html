@@ -1,0 +1,15 @@
+<h4>Formulario Productos</h4>
+<p>Nombre <input type="text"[(ngModel)]="producto.nombre"></p>
+<p>Cantidad <input type="number"[(ngModel)]="producto.cantidad" min="0"></p>
+<p>Precio <input type="number"[(ngModel)]="producto.precio" min="0"></p>
+<p>Tipo Producto <select [(ngModel)]="producto.tipoProducto">
+    <option value="0">bebida</option>
+    <option value="1">Alimentos Perecederos</option>
+    <option value="2">Condimentos</option>
+    <option value="3">Limpieza</option>    
+    </select>
+</p>
+
+
+<button (click)="addProducto()">Añadir Producto</button>
+<app-lista [productos]="productos"></app-lista>

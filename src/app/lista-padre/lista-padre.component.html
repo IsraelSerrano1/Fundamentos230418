@@ -1,0 +1,23 @@
+<h1>Pedidos</h1>
+
+<table>
+    <tr>
+        <td>ID Pedido</td>
+        <td>ID Cliente</td>
+        <td>Nombre Cliente</td>
+        <td>Total Productos</td>
+        <td>Importe Total</td>
+        
+    </tr>
+    <tr *ngFor="let pedido of pedidos">
+        <td>{{pedido.idPedido}}</td>
+        <td>{{pedido.idCliente}}</td>
+        <td>{{pedido.nombreCliente}}</td>
+        <td>{{pedido.totalProductos}}</td>  
+        <td>{{pedido.importeTotal}}</td>            
+    </tr>
+</table>
+
+
+<app-formulario-hijo (enviarDatos)="addPedido($event)"></app-formulario-hijo>
+

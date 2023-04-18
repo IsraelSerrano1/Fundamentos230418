@@ -7,14 +7,14 @@ import { Pedido } from '../_modelo/pedido';
   styleUrls: ['./formulario-hijo.component.css']
 })
 export class FormularioHijoComponent {
-  pedidos: Pedido[]= [];
-  pedido: Pedido = new Pedido(0,"",0,0 )
-  @Output() enviarDatos = new EventEmitter<Pedido[]>()
+  pedidosH: Pedido[]= [];
+  pedidoH: Pedido = new Pedido(0,"",0,0 );
+  @Output() enviarDatos = new EventEmitter<Pedido[]>();
 
   addPedido(){
-    this.pedidos.push(this.pedido)
-    this.enviarDatos.emit(this.pedidos);
-    this.pedido = new Pedido(0,"",0,0 );
+    this.pedidosH.push(this.pedidoH);
+    this.enviarDatos.emit(this.pedidosH);
+    this.pedidoH = new Pedido(0,"",0,0 );
   }
 
 }

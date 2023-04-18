@@ -7,10 +7,10 @@ import { Pedido } from '../_modelo/pedido';
   styleUrls: ['./lista-padre.component.css']
 })
 export class ListaPadreComponent {
-  pedidos: Pedido[] = [];
+  pedidosP: Pedido[] = [];
   
-  addPedido(pedido:Pedido[]){
-    this.pedidos=pedido
+  recivePedido(pedidoH:Pedido[]){
+    this.pedidosP=pedidoH;
   }
 
 }

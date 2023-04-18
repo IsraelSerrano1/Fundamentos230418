@@ -8,14 +8,14 @@ import { tipoProducto } from '../_modelo/tipoProducto';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
-  productos: Producto[]=[]
+  productosP: Producto[]=[]
   producto: Producto = new Producto("",0,0,0)
 
   
 
   addProducto(){
     // console.log(this.opcion)
-    this.productos.push(this.producto);
+    this.productosP.push(this.producto);
     this.producto= new Producto("",0,0,0);
   }
 

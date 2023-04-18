@@ -10,7 +10,7 @@ import { tipoProducto } from '../_modelo/tipoProducto';
 export class ListaComponent {
   
   
-  @Input() productos: Producto[]=[];
+  @Input() productosH: Producto[]=[];
 
   opcion: string[] = Object.values(tipoProducto) as string[];
   ngOnInit(): void {
